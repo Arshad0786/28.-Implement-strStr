@@ -56,6 +56,12 @@ class RemoveDuplicatesfromSortedArrayTest(unittest.TestCase):
         self.heystack = "abcdefg"
         self.needle = "gigeo"
         self.assertEqual(temp.strStr(self.heystack,self.needle), -1)
+    
+    def test_IDK(self):
+        temp = Solution()
+        self.heystack = "mississippi"
+        self.needle = "issip"
+        self.assertEqual(temp.strStr(self.heystack,self.needle), 4)
 
 
 if __name__ == "__main__":

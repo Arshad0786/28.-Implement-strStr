@@ -4,15 +4,11 @@ class Solution:
             return 0
         if(len(needle) > len(haystack)):
             return -1
-        SameFlag = False
-        for haystackIndex in range(len(haystack)):
+        for haystackIndex in range(len(haystack)-len(needle) + 1):
             if(haystack[haystackIndex] == needle[0]):
-                SameFlag = True
                 for needleIndex in range(len(needle)):
-                    if(haystackIndex + needleIndex == len(haystack)):
-                        return -1
                     if(haystack[haystackIndex + needleIndex] != needle[needleIndex]):
-                        SameFlag = False
-                if(SameFlag):
-                    return haystackIndex
+                        break
+                else:
+                    return haystackIndex    
         return -1
