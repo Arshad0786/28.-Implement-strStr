@@ -1,5 +1,5 @@
 import unittest
-from ImplementstrStr import Solution
+from KMPalgorithm import Solution
 
 
 class RemoveDuplicatesfromSortedArrayTest(unittest.TestCase):
@@ -57,10 +57,22 @@ class RemoveDuplicatesfromSortedArrayTest(unittest.TestCase):
         self.needle = "gigeo"
         self.assertEqual(temp.strStr(self.heystack,self.needle), -1)
     
-    def test_IDK(self):
+    def test_mississippi(self):
         temp = Solution()
         self.heystack = "mississippi"
         self.needle = "issip"
+        self.assertEqual(temp.strStr(self.heystack,self.needle), 4)
+
+    def test_mississippi2(self):
+        temp = Solution()
+        self.heystack = "mississippi"
+        self.needle = "pi"
+        self.assertEqual(temp.strStr(self.heystack,self.needle), 9)
+
+    def test_aabaaac(self):
+        temp = Solution()
+        self.heystack = "aabaaabaaac"
+        self.needle = "aabaaac"
         self.assertEqual(temp.strStr(self.heystack,self.needle), 4)
 
 
