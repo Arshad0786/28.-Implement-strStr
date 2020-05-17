@@ -42,3 +42,4 @@ class Solution:
                     prefixIndex = FailureFunctionList[prefixIndex - 1]
 
         return FailureFunctionList
+

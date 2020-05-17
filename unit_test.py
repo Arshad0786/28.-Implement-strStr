@@ -2,7 +2,7 @@ import unittest
 from KMPalgorithm import Solution
 
 
-class RemoveDuplicatesfromSortedArrayTest(unittest.TestCase):
+class ImplementstrStrTest(unittest.TestCase):
     def test_basic_function(self):
         temp = Solution()
         self.heystack = "hello"
